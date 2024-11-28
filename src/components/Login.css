@@ -1,0 +1,99 @@
+/* Navigation bar for welcome note */
+.welcome-navbar {
+    background-color: #efece2; /* Background color of the navigation bar */
+    padding: 0.5rem;
+    border-radius: 10px;
+    position: fixed; /* Fixes the navbar to the top */
+    top: 0; /* Positions the navbar at the top */
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Ensures navbar is on top of other elements */
+}
+
+.welcome-navbar nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Center the navigation links */
+    gap: 2rem;
+}
+
+.welcome-navbar nav ul li {
+    display: inline;
+}
+
+.welcome-navbar nav ul li a {
+    text-decoration: none;
+    color: #ffffff; /* White text */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 18px; /* Increased font size */
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s;
+}
+
+/* Change the hover color to something other than pink */
+.welcome-navbar nav ul li a:hover {
+    background-color: #bae9ba; /* Changed to a green color on hover */
+    border-radius: 5px;
+}
+
+/* Description section */
+.description-section {
+    width: 60%;
+    padding: 40px;
+    background-color: #f7f3ee;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Centering content horizontally */
+    border-left: 5px solid #ffffff;
+    border-radius: 10px;
+    font-family: 'Merriweather', sans-serif; /* Font style */
+    margin-top: 80px; /* Adds space below the navbar */
+    font-size: 24px; /* Increased font size for the welcome note */
+    color: #333; /* Optional: Change text color for better contrast */
+}
+
+/* Additional styling for the login page */
+.login-container {
+    display: flex;
+    height: 100vh;
+    border: 5px solid #ffffff; /* Thicker outer border */
+    font-family: 'Roboto', sans-serif;
+}
+
+.login-page {
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 40%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    border-right: 5px solid #ffffff;
+    position: relative;
+    border-radius: 10px;
+}
+/* Styling for the Sign-up option */
+.signup-option {
+    margin-top: 15px; /* Adds spacing from the form */
+    font-size: 14px; /* Smaller font size */
+    text-align: center;
+}
+
+.signup-option a {
+    font-weight: bold;
+    color: white; /* Green color for the link */
+    text-decoration: none;
+    font-size: 12px; /* Reduce size of the Sign-up link */
+    padding: 5px 10px; /* Adjust padding for a smaller button look */
+    border: 1px solid #bae9ba;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.signup-option a:hover {
+    background-color: #ecc76a;
+    color: white;
+}

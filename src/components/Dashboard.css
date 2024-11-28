@@ -1,0 +1,93 @@
+.dashboard-page {
+    background-color: #d4e9f1;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    position: relative;
+    padding: 2rem;
+}
+
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    width: 80%;
+}
+
+/* Icon Button Styling */
+.icon-button {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem; /* Added padding for a better button appearance */
+    background-color: rgba(254, 254, 255, 0.8); /* Optional: White background for better visibility */
+}
+
+.icon-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white;
+    text-decoration: none;
+    border-radius: 15px;
+    font-size: 1.5rem; /* Increased font size for labels */
+    transition: background-color 0.3s ease;
+    width: 100%; /* Make link take full width of button */
+    height: 100%; /* Make link take full height of button */
+}
+
+a:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Icon Styling */
+.icon {
+    font-size: 2.5rem; /* Increased icon size for better visibility */
+}
+
+/* Tooltip Styling */
+.tooltip-container {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.tooltip {
+    visibility: hidden;
+    width: 150px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    bottom: 110%; /* Adjusted to fit inside the button */
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip-container:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
