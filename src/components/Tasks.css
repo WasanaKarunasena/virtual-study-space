@@ -1,0 +1,80 @@
+.tasks-page {
+  background-color: #f0f8ff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  color: black; /* Set default font color to black */
+}
+
+h2 {
+  color: black; /* Font color for the heading */
+}
+
+form {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  color: black; /* Font color for form content */
+}
+
+.subject-container, .type-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: black; /* Font color for subject and task type containers */
+}
+
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+/* Style for the subject buttons */
+.options button {
+  padding: 0.7rem 1.5rem;
+  border-radius: 5px;
+  border: 1px solid #ddd; /* gray border */
+  background-color: #c8e6c9; /* light green background */
+  color: black; /* Set button text color to black */
+  cursor: pointer;
+}
+
+button.active {
+  background-color: #bbd8f6; /* blue background */
+  color: black; /* Text color for active button */
+}
+
+input {
+  padding: 0.8rem;
+  border: 1px solid white;
+  border-radius: 5px;
+  width: 100%;
+  color: black; /* Text color for input fields */
+}
+
+.date-time {
+  display: flex;
+  gap: 1rem;
+}
+
+button[type="submit"] {
+  background-color: #059347; /* blue background */
+  color: white; /* Set button text color to black */
+  border: none;
+  padding: 0.7rem 1.5rem;
+}
+
+.task-list {
+  background-color: #fafafa;
+  padding: 1rem;
+  margin-top: 1rem;
+  color: black; /* Text color for task list */
+}

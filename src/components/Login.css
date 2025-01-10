@@ -1,0 +1,107 @@
+/* Navigation bar for welcome note */
+.welcome-navbar {
+    background-color: #efece2; /* Light pastel background for the navbar */
+    padding: 0.5rem 1rem; /* Adjusted padding for better spacing */
+    border-radius: 10px;
+    position: fixed; /* Fixes the navbar to the top */
+    top: 0; /* Positions the navbar at the top */
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Ensures navbar is on top of other elements */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Added subtle shadow */
+}
+
+.welcome-navbar nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Center the navigation links */
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.welcome-navbar nav ul li {
+    display: inline;
+}
+
+.welcome-navbar nav ul li a {
+    text-decoration: none;
+    color: #14078c; /* Text color */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 18px; /* Increased font size */
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
+    border-radius: 5px; /* Rounded corners */
+    background-color: rgb(230, 245, 255); /* Lightest blue background */
+}
+
+/* Change the hover color to a slightly darker blue */
+.welcome-navbar nav ul li a:hover {
+    background-color: rgb(210, 235, 245); /* Slightly darker light blue on hover */
+    color: #000; /* Change text color to black for better visibility */
+    border-radius: 5px;
+}
+
+/* Description section */
+.description-section {
+    width: 60%;
+    padding: 40px;
+    background-color: #f7f3ee;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Centering content horizontally */
+    border-left: 5px solid #ffffff;
+    border-radius: 10px;
+    font-family: 'Merriweather', sans-serif; /* Font style */
+    margin-top: 80px; 
+    font-size: 24px; 
+    color: #333; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+/* Additional styling for the login page */
+.login-container {
+    display: flex;
+    height: 100vh;
+    border: 5px solid #ffffff; /* Thicker outer border */
+    font-family: 'Roboto', sans-serif;
+}
+
+.login-page {
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 40%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow for focus */
+    border-right: 5px solid #ffffff;
+    position: relative;
+    border-radius: 10px;
+}
+
+/* Styling for the Sign-up option */
+.signup-option {
+    margin-top: 15px; /* Adds spacing from the form */
+    font-size: 14px; /* Smaller font size */
+    text-align: center;
+}
+
+.signup-option a {
+    font-weight: bold;
+    color: #14078c; /* Consistent with the navbar text color */
+    text-decoration: none;
+    font-size: 14px; /* Adjusted size for better readability */
+    padding: 5px 10px; /* Adjust padding for consistency */
+    border: 1px solid #bae9ba;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.signup-option a:hover {
+    background-color: #bae9ba;
+    color: #000; /* Change to black on hover for better contrast */
+}

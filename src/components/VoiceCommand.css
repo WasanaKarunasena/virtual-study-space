@@ -1,0 +1,13 @@
+.voice-command-container button {
+  padding: 10px;
+  margin: 5px;
+  background-color: #e8e2e3; /* Light Pink */
+  color: black; /* Font color set to black */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.voice-command-container button:hover {
+  background-color: #e8d5d8; /* Slightly darker pink on hover */
+}

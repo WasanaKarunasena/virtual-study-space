@@ -1,0 +1,159 @@
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@300;400;500&display=swap');
+
+.task-list-container {
+  background-color: #fccedd;
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  margin: 3rem auto;
+  max-width: 900px;
+  font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  color: black; /* Changed color to black */
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+ul.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+li.task-item {
+  background-color: #eaabc1;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 15px;
+  display: grid;
+  grid-template-columns: 1fr 0.2fr;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+li.task-item:hover {
+  transform: translateY(-5px);
+}
+
+.task-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.task-name {
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: black; /* Changed color to black */
+}
+
+.task-date {
+  font-size: 1rem;
+  color: black; /* Changed color to black */
+  margin-top: 0.5rem;
+}
+
+.task-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+button {
+  padding: 0.75rem 1.5rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: rgb(33, 31, 180);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.edit-btn {
+  background-color: #f06292;
+  transition: background-color 0.3s ease;
+}
+
+.edit-btn:hover {
+  background-color: #ec407a;
+}
+
+.delete-btn {
+  background-color: #d81b60;
+  transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+  background-color: #c2185b;
+}
+
+/* Mark Complete Button */
+.mark-complete-btn {
+  color: black; /* Set the font color to black */
+  background-color: #8bc34a; /* A green background to show completion */
+}
+
+.mark-complete-btn:hover {
+  background-color: #66bb6a; /* Darken the green on hover */
+}
+
+/* Editing Form */
+.edit-task {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.task-input {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 2px solid #d81b60;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.task-input:focus {
+  border-color: #ec407a;
+}
+
+.save-btn {
+  background-color: #43a047;
+}
+
+.save-btn:hover {
+  background-color: #388e3c;
+}
+
+.cancel-btn {
+  background-color: #e57373;
+}
+
+.cancel-btn:hover {
+  background-color: #ef5350;
+}
+
+/* No Tasks Message */
+.no-tasks {
+  font-size: 1.5rem;
+  color: black; /* Changed color to black */
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .task-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  li.task-item {
+    grid-template-columns: 1fr;
+  }
+}
